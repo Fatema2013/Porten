@@ -1,0 +1,433 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+* {
+  font-family: "PT Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline: 1px solid red; */
+}
+
+.container {
+  padding: 0 12%;
+}
+
+/* HEADER */
+
+header {
+  height: 10vh;
+  background-color: #0f0f0f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .right {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 400;
+  align-items: center;
+  width: 50%;
+}
+
+header .right-mobile {
+  display: none;
+}
+
+header a {
+  color: #969696;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+@media (max-width: 678px) {
+  header .right-mobile {
+    display: block !important;
+    
+  }
+  header .right-mobile > img{
+    width: 30px;
+    height: 30px;
+  }
+  header .right {
+    display: none;
+  }
+}
+
+/* MAIN */
+
+main,
+.mainLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+main {
+  width: 100%;
+  height: 90vh;
+  background: url("./img/Rectangle 3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+.mainLogo {
+  width: 320px;
+  height: 320px;
+  border: 4px solid;
+}
+
+.mainLogo p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.mainLogo hr {
+  margin: 10px 0px;
+  width: 60%;
+}
+
+main > p {
+  font-size: 16px;
+  line-height: 150%;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 80px;
+  width: 50%;
+}
+
+@media (max-width: 678px) {
+  .mainLogo {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    max-width: 320px;
+    border: 4px solid;
+  }
+  .mainLogo > img {
+    width: 70%;
+  }
+  .mainLogo > p {
+    font-size: 16px;
+  }
+  main > p {
+    width: 100%;
+    font-size: 14px;
+  }
+}
+
+/* Header */
+
+.header {
+  display: flex;
+  align-items: center;
+  height: 70vh;
+}
+
+.header .left {
+  display: flex;
+  align-items: center;
+  padding: 93px 80px;
+  flex-direction: column;
+  background-color: #000;
+  width: 55%;
+  height: 100%;
+  color: #fff;
+  justify-content: center;
+}
+
+.Watchs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+}
+
+.Watchs section span {
+  display: grid;
+  place-items: center;
+  width: 260px;
+  height: 325px;
+}
+
+.Watchs span img {
+  width: 210px;
+  background-color: #191b1c;
+  padding: 50px 20px;
+}
+.Watchs section > p {
+  padding-left: 24px;
+}
+
+.header .right {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: url("./img/Rectangle 8.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 45vh;
+  font-size: 30px;
+  width: 45%;
+  height: 100%;
+  color: #fff;
+}
+
+.header .right button {
+  background: none;
+  border: solid #fff 1px;
+  color: #fff;
+  padding: 10px 28px;
+}
+
+.header .left hr,
+.header .right hr {
+  width: 10%;
+  margin: 20px 0px;
+}
+
+/* Footer */
+
+.footer {
+  display: flex;
+  min-height: fit-content;
+  height: 60vh;
+}
+
+.footer .right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+  width: 55%;
+  padding: 90px;
+  justify-content: center;
+}
+
+.footer > .left img {
+  height: 100%;
+  width: 100%;
+}
+
+.footer .right hr {
+  width: 15%;
+  margin: 30px 0px;
+}
+
+.footer .right .paragraph {
+  width: 65%;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.footer .right button {
+  background: none;
+  color: #fff;
+  border: solid #fff 1px;
+  padding: 10px 28px;
+}
+
+@media (max-width:678px) {
+  .header{
+    flex-direction: column;
+    height: fit-content;
+  }
+  .header > div{
+    width: 100% !important;
+    height: fit-content;
+  }
+  .header .Watchs{
+    flex-wrap: wrap;
+  }
+  .header .right{ 
+    padding: 0;
+    height: 60vh;
+    justify-content: center;
+  }
+
+  .footer {
+    flex-direction: column;
+    height: fit-content;
+  }
+  .footer > .left{
+    order: 1;
+    height: 40vh;
+  }
+  .footer > .right{
+    width: 100%;
+    padding: 40px 30px !important;
+  }
+  .footer .right .paragraph {
+    width: 100%;
+    font-size: 14px;
+  }
+
+}
+
+
+/* New-Arrivals */
+
+.New-Arrivals {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  color: #fff;
+  padding: 130px 0px;
+}
+
+.New-Arrivals > p {
+  font-size: 60px;
+}
+
+.New-Arrivals hr {
+  width: 6%;
+  margin: 40px 0px 60px 0px;
+}
+
+.watch8 {
+  flex-wrap: wrap;
+  width: 60%;
+}
+
+
+/* Brands */
+
+.Brands {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #0f0f0f;
+  color: #fff;
+  padding: 60px 0px 70px 0px;
+  font-size: 50px;
+}
+
+.Brands hr {
+  width: 7%;
+  margin: 40px 0px;
+}
+
+.coco {
+  padding: 0px 30px;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  background: url("./img/Rectangle 15.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 60px !important;
+  padding-bottom: 60px !important;
+  color: #fff;
+  gap: 40px;
+}
+
+footer .AboutStore {
+  width: 21%;
+}
+
+footer .Categories {
+  width: 20%;
+}
+
+footer > div {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 33%;
+}
+footer .title {
+  font-size: 40px;
+}
+
+footer .Categories > div button {
+  flex-direction: row;
+  background-color: #0f0f0f;
+  padding: 10px 20px;
+  /* margin: 0px 10px; */
+  color: #d0d0d0;
+  border: none;
+}
+
+footer .Categories > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+footer .Newsletter {
+  width: 20%;
+}
+
+footer .Newsletter form {
+  display: flex;
+  padding-top: 35px;
+}
+
+footer .Newsletter input {
+  background-color: #ffffff8f;
+  padding: 10px;
+  border: 0px;
+}
+
+footer .Newsletter button {
+  color: #fff;
+  background-color: #000;
+  padding: 10px 20px;
+  border: 0px;
+}
+
+@media (max-width:678px) {
+  footer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  footer .AboutStore {
+    align-items: center;
+    width: 100%;
+  }
+
+  footer .Categories{
+    align-items: center;
+    width: 100%;
+  }
+
+  footer .Newsletter{
+    align-items: center;
+    width: 100%;
+  }
+}
+
+.copyrights {
+  height: 6vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background: #0f0f0f;
+  color: #ffffff54;
+  align-items: center;
+}
